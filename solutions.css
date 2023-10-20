@@ -1,0 +1,72 @@
+/* svolgimento */
+.ex-1-square{
+    transition: all 0.4s ease-in-out;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+.ex-2-square{
+    transition: all 0.4s ease-in-out;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+.ex-3-square{
+    transition: all 0.4s ease-in-out;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+
+.ex-4-square{
+    transition: all 1s ease-in-out;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+.ex-5-square{
+    transition: all 0.4s ease-in-out;
+}
+
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+.ex-5-square:active{
+    width: 30px;
+    height: 30px;
+    margin: 35px;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+.ex-8-img{
+    transition: 0.5s;
+}
+
+.ex-8-img:hover{
+    filter: blur(2px) grayscale(0.7);
+    border-radius: 5%;
+}
+
+.ex-9-img{
+    transition: 0.5s;
+}
+
+.ex-9-img:hover{
+    filter: blur(2px) grayscale(0.7);
+    border-radius: 5%;
+    width: 500px;
+}
