@@ -52,6 +52,14 @@
     filter: grayscale(100%);
 }
 
+.ex-7-img{
+    transition: all 0.4s ease-in-out;
+}
+
+.ex-7-img:hover{
+    filter: blur(2px) grayscale(0.7);
+}
+
 .ex-8-img{
     transition: 0.5s;
 }
@@ -69,4 +77,86 @@
     filter: blur(2px) grayscale(0.7);
     border-radius: 5%;
     width: 500px;
+}
+
+.ex-10-icon{
+    animation: gira 1s linear infinite;
+}
+
+@keyframes gira {
+    0%{
+        transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon:hover{
+    animation: ruota 3s linear;
+}
+
+@keyframes ruota {
+    80%{
+        transform: rotate(300deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: spostadx 2s linear;
+}
+
+/* pezzo bianco width: 60px */
+@keyframes spostadx {
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: calc(100% - 60px); 
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: spostasx 2s linear;
+}
+
+/* pezzo bianco width: 60px */
+@keyframes spostasx {
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: calc(100% - 60px); 
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: spin 2s linear;
+}
+
+@keyframes spin {
+    0%{
+        left: 10%;
+    }
+    25%{
+        left: calc(100% - 60px);
+    }
+    50%{
+        left: calc(100% - 60px);
+        top: 10%;
+    }
+    75%{
+
+    }
+    100%{
+
+    }
+
 }
